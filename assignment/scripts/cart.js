@@ -28,7 +28,10 @@ console.log(`Basket is ${basket}`);
 console.log('Adding apples (expect true)', addItem('apples'));
 console.log(`Basket is now ${basket}`);
 
+ /// stretch goals section
 
+ const maxItems = 5;
+ 
 
 
 
