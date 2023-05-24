@@ -4,11 +4,18 @@ console.log('***** Cart Functions *****');
 
 let basket = [];
 let item;
+const maxItems = 5;
 
 
 function addItem(item) {
-    basket.push(item);
-    return true;
+    if(isFull() === false) {
+        basket.push(item);
+        return true;
+    } // add item
+  else {
+    console.log('Item could not be added to basket as basket is full.');
+    return false;
+  }
 }
 
 function listItems(basket) {
@@ -28,11 +35,28 @@ console.log(`Basket is ${basket}`);
 console.log('Adding apples (expect true)', addItem('apples'));
 console.log(`Basket is now ${basket}`);
 
- /// stretch goals section
+/// stretch goals
 
- const maxItems = 5;
+function isFull() {
+    if (basket.length >= maxItems) {
+        return true;
+    } // end true
+    else {
+        return false;
+    }
+ }
+
+ function removeItem(item) {
+    let index = basket.indexOf(item);
+    if (index === -1) {
+        return null;
+    }
+    return basket.splice(index, 1)[0];
+ }
+
  
 
+ 
 
 
 
