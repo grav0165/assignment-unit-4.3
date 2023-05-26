@@ -19,7 +19,7 @@ function addItem(item) {
 }
 
 
-function listItems(basket) {
+function listItems() {
     console.log('The current items in basket are:')
     for (i=0; i<basket.length; i++) {
         console.log(basket[i]);
