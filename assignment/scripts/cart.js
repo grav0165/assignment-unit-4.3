@@ -18,6 +18,7 @@ function addItem(item) {
   }
 }
 
+
 function listItems(basket) {
     console.log('The current items in basket are:')
     for (i=0; i<basket.length; i++) {
@@ -36,6 +37,8 @@ console.log('Adding apples (expect true)', addItem('apples'));
 console.log(`Basket is now ${basket}`);
 
 /// stretch goals
+
+
 
 function isFull() {
     if (basket.length >= maxItems) {
